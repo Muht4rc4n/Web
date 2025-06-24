@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Lutfen Formu Eksiksiz Doldurunuz.</h1>
+
+    <h2>Hesap Bilgileriniz</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="username">Kullanici Adi:</label>
+            </td>
+            <td style="width: 20px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <input type="text" id="username" placeholder="Kullanici Adinizi Giriniz"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="eposta">E-posta:</label>
+            </td>
+            <td style="width: 20px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <input type="email" id="eposta" placeholder="e-posta Giriniz"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="parola">Parola:</label>
+            </td> 
+            <td style="width: 20px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <input type="password" id="parola" placeholder="Parola Giriniz"> 
+            </td>
+        </tr>
+        
+    </table>
+
+    <h2>Kisisel Bilgileriniz</h2>
+    <table>
+        <tr>
+            <td>
+                <label for="name">Adiniz:</label>
+            </td>
+            <td style="width: 20px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <input type="text" id="name" placeholder="Adinizi Giriniz"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="surname">SoyAdiniz:</label>
+            </td>
+            <td style="width: 40px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <input type="text" id="surname" placeholder="SoyAdinizi Giriniz"> 
+            </td>
+        </tr>
+        <tr>
+            <td><label for="cities"> Sehir</label></td>
+            <td style="width: 40px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <select  id="cities">
+                <option value="27">Gaziantep</option>
+                <option value="44">Malatya</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Cinsiyet:</label></td>
+            <td style="width: 40px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                <label for="erkek">Erkek</label>
+                <input type="radio"  id="erkek" name="cinsiyet">
+                <label for="kiz">Kiz</label>
+                <input type="radio"  id="kiz" name="cinsiyet">
+
+            </td>
+        </tr>
+        <tr>
+            <td><label>Hobileriniz:</label></td>
+            <td style="width: 40px;"></td> <!--Kullanıcı adı ıle label arası bosluk ıcın-->
+            <td>
+                
+                <input type="checkbox" id="sinema">
+                <label for="sinema">Sinema</label>
+                <input type="checkbox" id="gezmek">
+                <label for="gezmek">Gezmek</label>
+                <input type="checkbox" id="spor">
+                <label for="spor">Spor</label>
+                <input type="checkbox" id="Kitap">
+                <label for="kitap">Kitap</label>
+                
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td> <!--kaydet butonu 3.kolonda oldugu ıcın boyle bısey yaptık-->
+            <td>
+                <button type="submit">Kaydet</button>
+            </td>
+        </tr>
+        
+
+
+
+    
+</body>
+</html>
