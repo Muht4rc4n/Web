@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        #showcase{
+            background-color: #2E4C6D;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #how-it-works{background-color: #FC997C;
+        padding: 10px;}
+
+        .main-header{
+            background-color: #FC997C;
+            padding: 8px 16px;
+        }
+
+        .main-nav{
+            display: inline-block;
+            /*width: 91%; /* bu sekılde yapınca block gıbı oldu tarayıcıya gore deger ayarlanıp tek bır satırmıs gıbı kullanılabılır bunun yerıne sabıt tarayıcı boyutu degıssede degısmemesı ıcın calc() kullanılır*/
+            width: calc(100% - 99px);/* 80px ı deneyerek bulduk bosluk kullanmak onemlı yoksa calısmıyor*/
+            text-align: right;
+        }
+
+        .main-nav__items{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav__item{
+            display: inline-block;
+            margin: 0 10px;
+
+        }
+        .main-nav__item a {  /* main-nav__item altındakı a etıketlerı ıcın*/
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        .main-header__logo{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+    </style>
+    <!-- h2 paddıngı 10px mis boylece h2 etıketı arsı bosluk kapanmıs oldu -->
+    <!-- margın kullanarak ornegın 500px deger vererek saga yanastırmaya calıstıgımızda daha buyuk tarayıcı sayfası geldıgında tam sagda olmaz cunku pıksel sabıt bu yuzden text alıgn gıbı ozellıkler kullanılmalıdır-->
+    <!-- text-alıgn ozellıgıde block yapılarında kullanılabılır bu yuzden bu kapsamı blok eleman gıbı davrandırmalıyız -->
+    <!-- h1 mesela bır block elementı satırı oldugu gıbı kaplar bu yuzden text-alıgn gıbı ozellıkler kullanarak saga sola yanastırabılırız-->
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="#">Movies</a></li>
+                <li class="main-nav__item"><a href="#">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section id="showcase">
+            <h1>Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <h2>How it works?</h2>
+        </section>
+    </main>
+
+    
+</body>
+</html>

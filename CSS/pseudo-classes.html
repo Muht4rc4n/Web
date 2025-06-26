@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            border: 1px solid gray;
+            padding: 5px 8px;
+            display: inline-block;
+            text-decoration: none;
+            width: 60px;
+            text-align: center;
+        }
+        a:link{ /*linke tıklanmadan oncekı halı*/
+            color: red;
+        }
+        a:visited{ /*linke tıklandıktan sonrakı halı*/
+            color: green;
+        }
+        a:hover{ /* a etıketının uzerıne gelıp tıklamadıgın durum*/
+            color: #fff;
+            background-color: yellow;
+        }
+        a:active{ /* tek tıklama , basılı tut, zıyaret gerceklesmedıgı durum*/
+            color: #fff;
+            background-color: violet;
+        }
+        /* sırası onemlı bu sırayla duzenlemek lazım */
+
+        div:hover p{ /*div hover oldugunda yanı dıv ın uzerıne gelındıgınde p etıketı gorunur olsun*/
+            display: block;
+        }
+
+        p {
+            display : none /*bu sekılde p etıketı gosterılmıyo ama yer kaplıyor*/
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Psuedo Classes -->
+
+    <a href="borders.html">Home</a>
+    <a href="box-sizing.html">Products</a>
+    <a href="browser_default.html">About</a>
+
+    <br><br>
+
+    <div>
+        Click here!
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut ipsa placeat? Consequatur praesentium aspernatur, eligendi adipisci dolores numquam minima, reiciendis consequuntur quae enim quod voluptates perspiciatis ipsam voluptatibus excepturi!</p>
+
+    </div>
+
+    
+
+</body>
+</html>

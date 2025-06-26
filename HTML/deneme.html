@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodlama Kursu</title>
+</head>
+<body>
+    <header>
+        <h1>Kodla Ogren</h1>
+        <hr>
+        <img src="Ornek_resim/ornek1.jpg" alt="site logosu" width="100">
+        KODLAYARAK OGRENMENIN TEK ADRESİ<br>
+
+    </header>
+    <nav>
+        <h2>Sayfa ici linkler</h2>
+        <ul>
+            <li><a href="#bolum1">Kurs Planı</a></li>
+            <li><a href="#bolum2">Egitmenimiz</a></li>
+            <li><a href="#bolum3">Kayıt Formumuz</a></li>
+            <li><a href="#bolum4">Sık Sorulan sorular</a></li>
+            <li><a href="#bolum5">Hakkımızda</a></li>
+        </ul>         
+    </nav>
+    <main>
+    <section>
+        <article>
+            <p>“Bu kursta HTML'nin temellerinden başlayarak form, tablo, liste, bağlantı gibi tüm yapıları öğreneceksiniz!</p>
+        </article>
+    </section>
+    <section id="bolum1">
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>
+                        <th>Hafta</th>
+                        <th>Konu</th>
+                        <th>Acıklama</th>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="2">Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lorem, ipsum.</td>
+                    <td colspan="2">Lorem, ipsum.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="bolum2">
+        <article>
+        <h2>Egitmen Hakkında</h2>
+        <h3>Muhtarcan Ergen
+            <small>Bilgisayar Muhendisi</small>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Rem laborum nobis consequuntur dolorum laboriosam fugiat molestiae in tempora, quaerat dolorem placeat facere impedit quasi maiores temporibus, expedita, quam ea error.</p>
+        </article>
+    </section>
+    <section id="bolum3">
+        <h3>Kayit Formu</h3>
+        <table>
+            <form action="#">
+                <div>
+                    <tr>
+                        <td><label for="name">Ad:</label></td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td style="width: 50px;"></td>
+                    </tr>
+                </div>
+
+                <div>
+                    <tr>
+                        <td><label for="surname">SoyAd:</label></td>
+                        <td><input type="text" id="surname"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td style="width: 50px;"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td><label for="eposta">e-mail:</label></td>
+                        <td><input type="email" id="eposta"></td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <td style="width: 50px;"></td>
+                    </tr>
+                </div>
+                
+                <div>
+                    <tr>
+                        <td><label for="intro">Neden Basvuruyorsunuz:</label></td>
+                        <td><textarea id="intro"></textarea></td>
+                    </tr>
+                </div>
+                
+                <div>
+                    <tr>
+                        <td>
+                            <button type="submit">Kaydet</button>
+                        </td>
+                    </tr>
+                </div>
+            </form>
+    </table>
+    </section>
+    </main>
+    <aside id="bolum4">
+        <h3>Sık sorulan sorular</h3>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+        </ul>
+    </aside>
+    <footer id="bolum5">
+        <h3>Hakkımızda</h3>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">İnstangram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+
+    
+</body>
+</html>

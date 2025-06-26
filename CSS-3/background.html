@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html,body{
+            height: 100%;
+        } */
+        body{
+            margin: 0;
+        }
+        #header{
+            background-color: red;
+            height: 100vh; /*viewportun % sını alır*/
+            background-image: url(bg.jpg);
+        }
+        #header h1{
+           margin: 0;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           font-size: 80px;
+           color: red;
+        }
+    </style>
+</head>
+<body style="height: 100%;">
+    <div id="header">
+        <h1>Background Text</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{ /*psuedo element ıcın :: kullanılır*/
+            font-weight:bold;
+            color: brown;
+            word-spacing: 2px; /*kelımeler arası bosluk*/
+            letter-spacing: 1px; /* harfler arası bosluk*/
+        }
+        p.about::first-line{ /*p ile .about arasında bosluk olursa p alrındakı about classını arar bosluk olmassa about classlı p yı arar*/
+            color: green;
+        }
+        p::first-letter{ /*p etıketlerının ılk harfının fontunu degıstırır*/
+            font-size: 48px;
+        }
+        ::selection{  /* yazıyı mouse ile secerken uygulanan renk degıstırıldı*/
+            background-color: hotpink;
+        }
+        p::after{
+            content: "\9EEE" ;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum itaque nesciunt facere id ducimus voluptatem velit! Iusto ipsam itaque temporibus asperiores, exercitationem adipisci eveniet vitae repellendus corrupti praesentium. Qui.
+    </p>
+
+    <p class="about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, ullam suscipit vero eos nisi quos facilis magni rerum ab voluptatum iusto inventore culpa molestiae cumque optio tempore consectetur, rem omnis!
+    </p>
+
+    
+</body>
+</html>
