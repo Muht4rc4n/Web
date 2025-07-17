@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        /*landscape*/
+        @media(min-width: 576px){
+            body{
+                background-color: green;
+            }
+        }
+        /*desktop*/
+        @media(min-width: 768px){
+            body{
+                background-color: red;
+            }
+        }
+        /*large desktop*/
+        @media(min-width: 1200px){
+            body{
+                background-color: orange;
+            }
+        }
+        /*extra large desktop*/
+        @media(min-width: 1400px){
+            body{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="phone"><h1>phone</h1></div>
+    <div id="landscape"><h1>landscape</h1></div>
+    <div id="desktop"><h1>desktop</h1></div>
+    <div id="large"><h1>large</h1></div>
+    <div id="xlarge"><h1>xlarge</h1></div>
+
+    
+</body>
+</html>

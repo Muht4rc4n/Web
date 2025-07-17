@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 62.5%; /*kullanıcı tarayıcının varsayılan yazı boyutunu degistirirse sabıt px kalmaması ıcın yuzde olarak verdık bu yuzde deger aslında bızım verecegımız px degerıne karsılık gelıyor(16px'li 10px yapıyo)*/
+        }
+
+        body{
+            font-size: 1.5rem;
+        }
+        @media (min-width: 576px){
+            html{
+                font-size: 12px;
+            }
+            #kutu-1 h2{
+                font-size: 1.8rem;
+            }
+        }
+        @media (min-width: 768px){
+            html{
+                font-size: 14px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="kutu-1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, facilis cumque placeat molestiae quasi dolor, repudiandae deleniti ab nisi error reprehenderit atque quidem repellendus voluptates laboriosam, quaerat laborum at eos.</p>
+    </div>
+
+    <div id="kutu-2">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, facilis cumque placeat molestiae quasi dolor, repudiandae deleniti ab nisi error reprehenderit atque quidem repellendus voluptates laboriosam, quaerat laborum at eos.</p>
+    </div>
+    
+</body>
+</html>
