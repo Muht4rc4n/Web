@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: "header header header"
+                                 "sidebar content content"
+                                 "footer footer footer";
+        }
+        .header{
+            margin-bottom: 10px;
+            grid-area: header;
+            background-color: bisque;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+        .content{
+            grid-area: content;
+            background-color: chocolate;
+            margin-left: 10px;
+            padding: 10px;
+        }
+        .footer{
+            background-color: black;
+            color: #fff;
+            grid-area: footer;
+        }
+        .box{
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        * h2,p,h1{
+            text-align: center;
+        }
+        .content p{
+            background-color: #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1>Blog Sayfası</h1>
+        </header>
+            <div class="sidebar">
+                <h2>Diğer iceriklerimiz</h2>
+                <div class="box">
+                    <h3>box 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam fugit vel maxime repellat numquam!</p>
+                </div>
+                <div class="box">
+                    <h3>box 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam fugit vel maxime repellat numquam!</p>
+                </div>
+                <div class="box">
+                    <h3>box 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magnam fugit vel maxime repellat numquam!</p>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Kisile Blogumuz</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi. Corporis dolor nemo illum natus, ipsam harum in! Ea officiis voluptates perspiciatis autem necessitatibus architecto blanditiis debitis, sunt facere ullam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi. Corporis dolor nemo illum natus, ipsam harum in! Ea officiis voluptates perspiciatis autem necessitatibus architecto blanditiis debitis, sunt facere ullam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi. Corporis dolor nemo illum natus, ipsam harum in! Ea officiis voluptates perspiciatis autem necessitatibus architecto blanditiis debitis, sunt facere ullam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi. Corporis dolor nemo illum natus, ipsam harum in! Ea officiis voluptates perspiciatis autem necessitatibus architecto blanditiis debitis, sunt facere ullam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi. Corporis dolor nemo illum natus, ipsam harum in! Ea officiis voluptates perspiciatis autem necessitatibus architecto blanditiis debitis, sunt facere ullam!</p>
+            </div>
+        <footer class="footer">
+            <h2>Hakkımızda</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aspernatur accusamus perspiciatis quisquam ad?</p>
+        </footer>
+    </div>
+
+</body>
+</html>
